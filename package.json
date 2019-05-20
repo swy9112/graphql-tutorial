@@ -1,0 +1,8 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "graphql tutorial",
+  "main": "index.js",
+  "repository": "https://github.com/swy9112/graphql-tutorial.git",
+  "license": "MIT"
+}
