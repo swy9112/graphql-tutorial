@@ -6,9 +6,12 @@
   "repository": "https://github.com/swy9112/graphql-tutorial.git",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "graphql-yoga": "^1.17.4",
     "node-fetch": "^2.6.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "react-helmet": "^5.2.1",
+    "styled-reset": "^2.0.12"
   },
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
