@@ -7,8 +7,15 @@ export const getMovies = (limit, rating) => {
     .then(json => json.data.movies);
 }
 
-export const getMovie = (id) => {
-    return fetch(API_URL)
-    .then(res => res.json())
-    .then(json => json.data.movies)
-}
+export const getMovie = async id => {
+    const {
+      data: {
+        data: { movie }
+      }
+    } = await axios(MOVIE_DETAILS_URL, {
+      params: {
+        movie_id: id
+      }
+    });
+    return movie;
+  };
